@@ -43,7 +43,7 @@ return [
     'profession_required' => 'Profession is required',
     'number_numeric' => 'Mobile Number must be in numeric form',
     'underpaid_message' => 'You are still underpaid :amount',
-    'overpaid_message' => 'Sorry you overpaid :amount, would you like to add the rest to your coins?',
+    'overpaid_message' => 'Sorry you overpaid :amount, would you like to enter a balance?',
     'yes' => 'Yes',
     'no' => 'No',
     'add_coin' => 'Add 100 Coin',

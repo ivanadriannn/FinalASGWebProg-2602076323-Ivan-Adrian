@@ -27,10 +27,10 @@ class AvatarSeeder extends Seeder
             0,
             0,
             0,
-            0,
             50,
+            60,
+            75,
             100,
-            150,
         ];
 
         for ($i = 0; $i < count($images); $i++) {

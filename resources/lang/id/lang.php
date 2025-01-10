@@ -43,7 +43,7 @@ return [
     'profession_required' => 'Profesi harus diisi',
     'number_numeric' => 'Nomor HP harus dalam bentuk angka',
     'underpaid_message' => 'Anda masih kurang bayar :amount',
-    'overpaid_message' => 'Maaf, Anda kelebihan bayar :amount, apakah Anda ingin menambah sisanya ke koin Anda?',
+    'overpaid_message' => 'Maaf Anda kelebihan pembayaran :jumlah, apakah Anda ingin memasukkan saldo?',
     'yes' => 'Ya',
     'no' => 'Tidak',
     'add_coin' => 'Tambah 100 Koin',

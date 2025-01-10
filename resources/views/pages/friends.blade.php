@@ -44,14 +44,19 @@
                                     </h5>
                                     <div>
                                         @if (Auth::user()->id != $friend->sender_id)
-                                            <form action="{{ route('accept-friends', $friend->sender_id) }}" method="POST" style="display:inline;">
-                                                @csrf
-                                                <button type="submit" class="btn btn-success btn-sm">@lang('lang.accept')</button>
-                                            </form>
-                                            <form action="{{ route('reject-friends', $friend->sender_id) }}" method="POST" style="display:inline;">
-                                                @csrf
-                                                <button type="submit" class="btn btn-danger btn-sm">@lang('lang.reject')</button>
-                                            </form>
+                                            <div class="d-flex gap-2">
+                                                <form action="{{ route('accept-friends', $friend->sender_id) }}" method="POST" style="display:inline;">
+                                                    @csrf
+                                                    <button type="submit" class="btn btn-success btn-sm d-flex align-items-center">
+                                                        <i class="fa-regular fa-thumbs-up me-1"></i>  <!-- Ikon thumbs-up Font Awesome -->
+                                                        @lang('lang.accept')
+                                                    </button>
+                                                </form>
+                                                <form action="{{ route('reject-friends', $friend->sender_id) }}" method="POST" style="display:inline;">
+                                                    @csrf
+                                                    <button type="submit" class="btn btn-danger btn-sm">@lang('lang.reject')</button>
+                                                </form>
+                                            </div>
                                         @endif
                                     </div>
                                 </div>
